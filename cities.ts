@@ -1,4 +1,15 @@
-const cities = [
+interface City {
+  id: number;
+  name: string;
+  population: number;
+  country: string;
+}
+
+/**
+ * You can use this array
+ * to manually test your code
+ */
+const cities: City[] = [
   {
     id: 301,
     name: "New York",
@@ -32,32 +43,43 @@ const cities = [
 ];
 
 // 1) Write a `getCityPopulation` function that accepts `city` object argument, return the population of that city
-function getCityPopulation(city) {
+function getCityPopulation(city: City): number {
   // write your code here...
+  return -1;
 }
 // console.log(getCityPopulation(cities[0])); // Outputs: 8398748
 
 // 2) Write a `isPopulationAboveThreshold` function that accepts the following arguments `city` object and `threshold` number, return true if the city's population is greater than or equal to the threshold, otherwise returns false
-function isPopulationAboveThreshold(city, threshold) {
+function isPopulationAboveThreshold(city: City, threshold: number): boolean {
   // write your code here...
+  return false;
 }
 // console.log(isPopulationAboveThreshold(cities[1], 2000000)); // Outputs: true
 
 // 3) Write a `addCity` function that accepts the following argument, an array of city object `cities` and the properties of a city (id, name, population, and country).
 // Create a new city object and add it to the end of the array.
 // Return the updated array of cities
-function addCity(cities, id, name, population, country) {
+function addCity(
+  cities: City[],
+  id: number,
+  name: string,
+  population: number,
+  country: string
+): City[] {
   // write your code here...
+  return [];
 }
 // console.log(addCity(cities, 306,  "Vancouver", 1200000,  "Canada" ));
 
 // 4) Write a `countCitiesInCountry` function that accepts the following arguments, an array of city objects `cities` and `country` string, return the number of cities in the specified country
-function countCitiesInCountry(cities, country) {
+function countCitiesInCountry(cities: City[], country: string): number {
   // write your code here...
+  return -1;
 }
 // console.log(countCitiesInCountry(cities, "France")); // Outputs: 1
 
-module.exports = {
+export {
+  City,
   getCityPopulation,
   isPopulationAboveThreshold,
   addCity,

@@ -1,12 +1,13 @@
-const {
-  getCityPopulation,
-  isPopulationAboveThreshold,
+import {
+  City,
   addCity,
   countCitiesInCountry,
-} = require("./objectIteration.js");
+  getCityPopulation,
+  isPopulationAboveThreshold,
+} from "./cities";
 
-describe("City Data Functions", () => {
-  let cities;
+describe("Cities", () => {
+  let cities: City[];
 
   beforeEach(() => {
     cities = [
