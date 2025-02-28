@@ -1,3 +1,4 @@
+// don't change this interface
 interface City {
   id: number;
   name: string;
@@ -42,23 +43,52 @@ const cities: City[] = [
   },
 ];
 
-// 1) Write a `getCityPopulation` function that accepts `city` object argument, return the population of that city
+/**
+ * 1) Using `getCityPopulation` function:
+ * - Accepts a `city` parameter of type `City`.
+ * - Returns the population of the specified city.
+ * Example:
+ * getCityPopulation(cities[0]); // => 8398748
+ */
 function getCityPopulation(city: City): number {
   // write your code here...
-  return -1;
-}
-// console.log(getCityPopulation(cities[0])); // Outputs: 8398748
 
-// 2) Write a `isPopulationAboveThreshold` function that accepts the following arguments `city` object and `threshold` number, return true if the city's population is greater than or equal to the threshold, otherwise returns false
+  return -1; // replace -1 with what you see is fit
+}
+
+/**
+ * 2) Using `isPopulationAboveThreshold` function:
+ * - Accepts:
+ *   - A `city` parameter of type `City`.
+ *   - A `threshold` parameter of type `number`.
+ * - Returns `true` if the city's population is greater than or equal to the threshold, otherwise returns `false`.
+ * Example:
+ * isPopulationAboveThreshold(cities[1], 2000000); // => true
+ */
 function isPopulationAboveThreshold(city: City, threshold: number): boolean {
   // write your code here...
-  return false;
-}
-// console.log(isPopulationAboveThreshold(cities[1], 2000000)); // Outputs: true
 
-// 3) Write a `addCity` function that accepts the following argument, an array of city object `cities` and the properties of a city (id, name, population, and country).
-// Create a new city object and add it to the end of the array.
-// Return the updated array of cities
+  return false; // replace false with what you see is fit
+}
+
+/**
+ * 3) Using `addCity` function:
+ * - Accepts:
+ *   - A `cities` array of type `City[]`.
+ *   - An `id` parameter of type `number`.
+ *   - A `name` parameter of type `string`.
+ *   - A `population` parameter of type `number`.
+ *   - A `country` parameter of type `string`.
+ * - Creates a new `City` object and adds it to the end of the array.
+ * - Returns the updated array of cities.
+ * Example:
+ * addCity(cities, 306, "Vancouver", 1200000, "Canada");
+ * // => [
+ * //   { id: 301, name: "New York", population: 8398748, country: "United States" }, // first element
+ * //   ...
+ * //   { id: 306, name: "Vancouver", population: 1200000, country: "Canada" }, // last element
+ * // ]
+ */
 function addCity(
   cities: City[],
   id: number,
@@ -67,16 +97,24 @@ function addCity(
   country: string
 ): City[] {
   // write your code here...
-  return [];
-}
-// console.log(addCity(cities, 306,  "Vancouver", 1200000,  "Canada" ));
 
-// 4) Write a `countCitiesInCountry` function that accepts the following arguments, an array of city objects `cities` and `country` string, return the number of cities in the specified country
+  return []; // replace empty array with what you see is fit
+}
+
+/**
+ * 4) Using `countCitiesInCountry` function:
+ * - Accepts:
+ *   - A `cities` array of type `City[]`.
+ *   - A `country` parameter of type `string`.
+ * - Returns the number of cities in the specified country.
+ * Example:
+ * countCitiesInCountry(cities, "France"); // => 1
+ */
 function countCitiesInCountry(cities: City[], country: string): number {
   // write your code here...
-  return -1;
+
+  return -1; // replace -1 with what you see is fit
 }
-// console.log(countCitiesInCountry(cities, "France")); // Outputs: 1
 
 export {
   City,
