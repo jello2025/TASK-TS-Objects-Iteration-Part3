@@ -4,7 +4,7 @@ import {
   countCitiesInCountry,
   getCityPopulation,
   isPopulationAboveThreshold,
-} from "./cities";
+} from "../cities";
 
 describe("Cities", () => {
   let cities: City[];
