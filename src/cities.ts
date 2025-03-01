@@ -44,11 +44,11 @@ const cities: City[] = [
 ];
 
 /**
- * 1) Using `getCityPopulation` function:
+ * `getCityPopulation` function:
  * - Accepts a `city` parameter of type `City`.
  * - Returns the population of the specified city.
  * Example:
- * getCityPopulation(cities[0]); // => 8398748
+ *  getCityPopulation(cities[0]); // => 8398748
  */
 function getCityPopulation(city: City): number {
   // write your code here...
@@ -57,13 +57,13 @@ function getCityPopulation(city: City): number {
 }
 
 /**
- * 2) Using `isPopulationAboveThreshold` function:
+ * `isPopulationAboveThreshold` function:
  * - Accepts:
  *   - A `city` parameter of type `City`.
  *   - A `threshold` parameter of type `number`.
  * - Returns `true` if the city's population is greater than or equal to the threshold, otherwise returns `false`.
  * Example:
- * isPopulationAboveThreshold(cities[1], 2000000); // => true
+ *  isPopulationAboveThreshold(cities[1], 2000000); // => true
  */
 function isPopulationAboveThreshold(city: City, threshold: number): boolean {
   // write your code here...
@@ -72,7 +72,7 @@ function isPopulationAboveThreshold(city: City, threshold: number): boolean {
 }
 
 /**
- * 3) Using `addCity` function:
+ * `addCity` function:
  * - Accepts:
  *   - A `cities` array of type `City[]`.
  *   - An `id` parameter of type `number`.
@@ -82,12 +82,12 @@ function isPopulationAboveThreshold(city: City, threshold: number): boolean {
  * - Creates a new `City` object and adds it to the end of the array.
  * - Returns the updated array of cities.
  * Example:
- * addCity(cities, 306, "Vancouver", 1200000, "Canada");
- * // => [
- * //   { id: 301, name: "New York", population: 8398748, country: "United States" }, // first element
- * //   ...
- * //   { id: 306, name: "Vancouver", population: 1200000, country: "Canada" }, // last element
- * // ]
+ *  addCity(cities, 306, "Vancouver", 1200000, "Canada");
+ *    // => [
+ *    //   { id: 301, name: "New York", population: 8398748, country: "United States" }, // first element
+ *    //   ...
+ *    //   { id: 306, name: "Vancouver", population: 1200000, country: "Canada" }, // last element
+ *    // ]
  */
 function addCity(
   cities: City[],
@@ -102,13 +102,13 @@ function addCity(
 }
 
 /**
- * 4) Using `countCitiesInCountry` function:
+ * `countCitiesInCountry` function:
  * - Accepts:
  *   - A `cities` array of type `City[]`.
  *   - A `country` parameter of type `string`.
  * - Returns the number of cities in the specified country.
  * Example:
- * countCitiesInCountry(cities, "France"); // => 1
+ *  countCitiesInCountry(cities, "France"); // => 1
  */
 function countCitiesInCountry(cities: City[], country: string): number {
   // write your code here...
